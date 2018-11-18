@@ -1,0 +1,33 @@
+name = raw_input("Write your name: ")
+print name + " welcome to converter from kilometres to miles!"
+
+choice = raw_input("Type m if you want to convert from miles to kilometres, type k if you want to convert from kilometres to miles!")
+
+
+while choice == "k":
+    km = int(raw_input("Write here the kilometres: "))
+    mi = km * 0.621371
+    print str(km) + " kilometres" + " is exactly " + str(mi) + " miles!"
+    print " Thank you for using this converter!"
+    again = raw_input(" Would you like to convert again? ( y or n): ")
+    if again == "n":
+        print "See you next time!"
+        break
+
+while choice == "m":
+    mi = int(raw_input("Write here the miles: "))
+    km = mi / 0.621371
+    print str(mi) + " miles " + " is exactly " + str(km) + " kilometres!"
+    print " Thank you for using this converter!"
+    again = raw_input(" Would you like to convert again? ( y or n): ")
+    if again == "n":
+        print "See you next time!"
+        break
+
+while choice != "m" and choice != "k":
+    print " Please put the letter m or k "
+    break
+
+
+
+
